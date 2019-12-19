@@ -1,0 +1,39 @@
+import {StyleSheet,Dimensions} from 'react-native'
+
+export default styles = StyleSheet.create({
+    visor:{
+      backgroundColor:"black",
+      height:(Dimensions.get('screen').height/7)*1.7,
+      justifyContent:'flex-end'
+    },
+    container:{
+      height:(Dimensions.get('screen').height/7)*5,
+      paddingBottom:10
+    },
+    teclado:{
+      backgroundColor:"black",
+      height:(Dimensions.get('screen').height/7)*0.90,
+      padding:5,
+      flexDirection:'row',
+      justifyContent:'space-between',
+      alignItems:'center'
+    },
+    numero:{
+      paddingRight:5,
+      fontSize:60,
+      color:"#fff",
+      textAlign:'right',
+      marginBottom:10,
+    },
+    botao:{
+      width:(Dimensions.get('screen').width/4)*0.9,
+      height:"90%",
+      borderRadius:(Dimensions.get('screen').width/4)*0.9,
+      margin:2,
+      justifyContent:'center'
+    },
+    text:{
+      textAlign:'center',
+      fontSize:45
+    }
+  })
